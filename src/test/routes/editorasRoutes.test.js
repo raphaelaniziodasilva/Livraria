@@ -1,16 +1,17 @@
+// Fazendo os testes de rotas vamos validar as rotas da nossa aplicação
 import request from 'supertest';
-import {
-  describe, expect, it, jest,
-} from '@jest/globals';
+import {describe, expect, it, jest,} from '@jest/globals';
+// chamando a aplicação 
 import app from '../../app.js';
 
-let server;
-beforeEach(() => {
+// vamos inicalizar o servidor nos testes
+let server; // vai ficar do lado de fora para poder ser utilizado nos outros blocos de codigo
+beforeEach(() => { // antes de cada teste inicalizar um banco de dados 
   const port = 3000;
   server = app.listen(port);
 });
-
-afterEach(() => {
+// derrubando o servidor
+afterEach(() => { // depois de cada teste liberar o banco de dados
   server.close();
 });
 
@@ -80,3 +81,4 @@ describe('DELETE em /editoras/id', () => {
       .expect(200);
   });
 });
+
