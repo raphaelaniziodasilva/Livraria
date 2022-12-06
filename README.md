@@ -38,11 +38,20 @@ Este projeto já conta com o código necessário para subir a API em um servidor
 │   │   └── livro.js
 │   │   └── autor.js
 │   │   └── editora.js
-│   └── routes
-│       ├── autoresRoutes.js
-│       ├── editorasRoutes.js
-│       ├── index.js
-│       └── livrosRoutes.js
+│   ├── routes
+│   │   └── autoresRoutes.js
+│   │   └── editorasRoutes.js
+│   │   └── index.j
+│   │   └── livrosRoutes.js
+│   ├── test
+│   │    ├── models
+│   │    │   └── autor.test.js
+│   │    │   └── editora.test.js
+│   │    │   └── livro.test.js
+│   │    ├── routes
+│   │    │   └── editorasRoutes.test.js
+│   │    │   └── 
+│   │    │   └── 
 ```
 
 
