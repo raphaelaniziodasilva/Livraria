@@ -24,12 +24,14 @@ class EditorasController {
     const { body } = req;
     const editora = new Editora(body);
     try {
+      // validação se o body estiver vazio 
       if (Object.keys(body).length === 0) {
         throw new Error('corpo da requisicao vaio');
       }
       const resposta = await editora.salvar(editora);
       return res.status(201).json({ message: 'editora criada', content: resposta });
     } catch (err) {
+      // checando se a menssagem de erro e igual a mensagem de validação do body vazio
       if (err.message === 'corpo da requisicao vaio') {
         return res.status(400).json(err.message);
       }
