@@ -41,7 +41,7 @@ Este projeto já conta com o código necessário para subir a API em um servidor
 │   ├── routes
 │   │   └── autoresRoutes.js
 │   │   └── editorasRoutes.js
-│   │   └── index.j
+│   │   └── index.js
 │   │   └── livrosRoutes.js
 │   ├── test
 │   │    ├── models
